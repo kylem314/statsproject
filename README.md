@@ -21,5 +21,4 @@ Deployment | [Link](https://github.com/kylem314/youremom/wiki/Deployment)
 Scrum Board | [Link](https://github.com/kylem314/youremom/projects/1) |
 
 Overview: 
-
-
+Our project will be a website to organize college applications for students, including features such as deadlines, due dates, and application fees. We'll use a database of college application information to set this up and organize the data into easy-to-use formats for students. In addition, students will be able to login and select colleges to apply to, opening a page with information specific to them and being able to opt to get notifications for upcoming deadlines.
