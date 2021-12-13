@@ -1,7 +1,7 @@
 # Welcome to P1 Intellijs' College Application Service
 
 ## Scrum Team Members and Contributions
-m221p1-youre-mom   | [Scrum Board](https://github.com/kylem314/p1-youre-mom/projects/1) | [Repo Contributors](https://github.com/kylem314/p1-youre-mom/graphs/contributors) | ------ | ------ | ------ |
+m221p1-youre-mom   | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1) | [Repo Contributors](https://github.com/yajatyadav/intellijs/graphs/contributors) | ------ | ------ | ------ |
 ------ | ------ | ------ | ------ | ------ | ------ |
 Name            | GitHub ID | Tasks | Scrum Board | Commits | Profile |
 Kyle Myint | kylem314 | [Issues](https://github.com/kylem314/intellijs/issues/assigned/kylem314) | [Scrum Board](https://github.com/kylem314/intellijs/projects/1?card_filter_query=assignee%3Akylem314) | [Issues](https://github.com/yajatyadav/spring_portfolio/issues/assigned/kylem314) -- [Commit Page](https://github.com/kylem314/intellijs/commits?author=kylem314)| [Profile](https://github.com/kylem314) |
