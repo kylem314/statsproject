@@ -1,0 +1,143 @@
+
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layout}" lang="en">
+
+<head ><div layout:fragment="metadata" th:remove="tag">
+    <!-- Start of head content specific to page -->
+    <title>About Kyle M</title>
+    <!-- End of head content specific to page -->
+</div></head>
+
+<body ><div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+
+    <p>Hello, this is Kyle's About page! </p>
+    <p>Here's a simple number trick! <br> Think of a number between 1 and 9 <br> Multiply by 5 <br> Add 8 <br> Multiply by 2 <br> Add another number between 1 and 9 <br> Add 16 </p>
+
+    <script type="text/javascript">
+        function numbertrick(){
+
+            var val = parseInt(document.getElementById("Question").value);
+
+            val = val - 32;
+            var second = val % 10;
+            val = val - second;
+            var first = val / 10;
+
+            if(first == second){
+                alert("Your first number was " + String(first) + " and your second number was also " + String(second) + "!");
+            }else{
+                alert("Your first number was " + String(first) + " and your second number was " + String(second) + "!");
+            }}
+    </script>
+    <div class="contact" style="height: 35vh;">
+        <div class="row justify-content-left" style="margin: 2%;">
+            <form action="/kyleabout" method="GET" id="kyleaboutForm">
+                <div>
+                    <label>What answer did you get?</label>
+                    <input name="name2" id="Question" placeholder="Question">
+                    <button onclick = "numbertrick()" id="button1">Submit</button>
+                    <!-- test 4 -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div style="margin-left: 50px; margin-top: 50px; width:60%" class="row justify-content-around">
+        <div>
+            <a title="Click to Greyscale" onclick="imageSwitch(1)"><img id="image1" style="display:none" th:src="@{/images/bird.jpg}" src="/static/images/bird.jpg" width="400px" height="400px"></a>
+            <a title="Click to Revert" onclick="imageSwitch(2)"><img id="image2" style="display:inline" th:src="@{/images/bird2.png}" src="static/images/bird2.png" width="400px" height="400px"></a>
+        </div>
+    </div>
+
+
+    <h2 class="sectionTitle">Unit 2 FRQ's</h2>
+    <div class="sectionText">
+        <p>(a) </br>
+            LightSequence gradShow = new LightSequence("0101 0101 0101");</br>
+            (b)</br>
+            gradShow.display();</br>
+            (c)</br>
+            gradShow.changeSequence("0011 0011 0011");</br>
+            (d)</br>
+            resultSeq = gradShow.insertSegment("1111 1111", 4);</br>
+            (e)</br>
+            int indexOfSegment = oldSeq.indexOf(segment);</br>
+            String newSeq = oldSeq.substring(0, indexOfSegment) + oldSeq.substring(indexOfSegment + segment.length());</br>
+            (f)</br>
+            aSquared = a * a</br>
+            bSquared = b * b</br>
+            System.out.println(Math.sqrt(aSquared + bSquared));</br>
+        </p>
+    </div>
+
+    <h2 class="sectionTitle">Unit 3 FRQ's</h2>
+    <div class="sectionText">
+        <p>(1a) </br>
+            if(rsvp){</br>
+                System.out.println("attending");</br>
+            }else if{</br>
+                System.out.println("not attending");</br>
+            }</br>
+            (1b)</br>
+            if(selection == 1){</br>
+                System.out.println("beef");</br>
+            }else if(selection == 2){</br>
+                System.out.println("chicken");</br>
+            }else if(selection == 3){</br>
+                System.out.println("pasta");</br>
+            }else{</br>
+                System.out.println("fish");</br>
+            }</br>
+            (1c)</br>
+            if(rsvp == false){</br>
+                option1 = "Sorry you can't make it.";</br>
+            }else if(rsvp){</br>
+                option1 = "Thanks for attending. You will be served";</br>
+                if(selection == 1){</br>
+                    option1 += " beef.";</br>
+                }else if(selection == 2){</br>
+                    option1 += " chicken.";</br>
+                }else if(selection == 3){</br>
+                    option1 += " pasta.";</br>
+                }else{</br>
+                    option1 += " fish.";</br>
+                }}</br>
+            (1d)</br>
+            if(option1 == option2){</br>
+                System.out.println("true");</br>
+            }else{</br>
+                System.out.println("false");</br>
+            }</br>
+        </p>
+    </div>
+
+    <div>
+        <a href="https://www.linkedin.com/in/kyle-myint-33168b207/">LinkedIn  |</a>
+        <a href="https://docs.google.com/document/d/1wBXKLL6xQmgASgxzY1QiiIfNb8CQyLxzs20WN7NuvAg/edit?usp=sharing">Journal  |</a>
+        <a href="https://replit.com/@KyleMyint/ChessOO-3">CSP Tri 1 Project  |</a>
+        <a href="https://github.com/kylem314/P5-Gim-Vamps-Project"CSP Tri 2 Project  |</p>
+        <a href="https://github.com/kylem314/p3-web-error-project">CSA Tri 3 Project  |</a>
+        <a href="https://github.com/devamshri/AllHailTheHolyScrumMaster">CSA Tri 1 Project  |</a>
+        <a href="https://github.com/kylem314/p1-youremom">CSA Tri 2 Project</a>
+
+
+
+    </div>
+    <!-- End of body content specific to page -->
+</div></body>
+
+
+</html>
+
+
+<style>
+    html,body{
+        display: grid;
+        height: 100%;
+        place-items: center;
+        text-align: center;
+        background: linear-gradient(#00FBDE, #F96F6F);
+    }
+</style>
