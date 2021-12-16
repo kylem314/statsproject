@@ -18,9 +18,10 @@ Our wiki offers in-depth documentation of various aspects of our project.
 ##### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
 
 ### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
-Name | Link to code |
-Kyle Myint | 
-Charlie Zhu |
-Yajat Yadav | 
-Eric Wang | 
-Ak Prathipati | 
+Name | Link to code | Link to page |
+----- | ----- | ----- |
+Kyle Myint | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/kyleabout) | [Link](http://intellijs.cf/kyleabout) |
+Charlie Zhu | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/charlieabout.html) | [Link](http://intellijs.cf/charlieabout) |
+Yajat Yadav | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/yajat_about.html) | [Link](http://intellijs.cf/yajatabout) |
+Eric Wang | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/ericabout.html) | [Link](http://intellijs.cf/ericabout) |
+Ak Prathipati | [Link](link) | [Link](link) |
