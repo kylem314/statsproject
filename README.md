@@ -13,9 +13,9 @@ Ak Prathipati | akprathipati | [Issues](https://github.com/yajatyadav/intellijs/
 
 ## Wiki
 Our wiki offers in-depth documentation of various aspects of our project.
-[Deployment](https://github.com/yajatyadav/intellijs/wiki/Deployment)
-[Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
-[Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
+##### [Deployment](https://github.com/yajatyadav/intellijs/wiki/Deployment)
+##### [Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
+##### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
 
 ### Week 1 + Week 2 not included - switched teams and created new repository; starting over
 
