@@ -17,8 +17,6 @@ Our wiki offers in-depth documentation of various aspects of our project.
 ##### [Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
 ##### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
 
-### Week 1 + Week 2 not included - adjusted teams and created new repository; starting over
-
 ### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
 Name | Link to code |
 Kyle Myint | 
