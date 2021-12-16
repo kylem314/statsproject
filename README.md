@@ -18,6 +18,7 @@ Our wiki offers in-depth documentation of various aspects of our project.
 ##### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
 
 ### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
+[Review ticket](https://github.com/yajatyadav/intellijs/issues/10)
 Name | Link to code | Link to page |
 ----- | ----- | ----- |
 Kyle Myint | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/kyleabout) | [Link](http://intellijs.cf/kyleabout) |
