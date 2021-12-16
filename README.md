@@ -22,6 +22,6 @@ Name | Link to code | Link to page |
 ----- | ----- | ----- |
 Kyle Myint | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/kyleabout) | [Link](http://intellijs.cf/kyleabout) |
 Charlie Zhu | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/charlieabout.html) | [Link](http://intellijs.cf/charlieabout) |
-Yajat Yadav | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/yajat_about.html) | [Link](http://intellijs.cf/yajatabout) |
+Yajat Yadav | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/yajat_about.html) | [Link](http://intellijs.cf/yajat_about) |
 Eric Wang | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/ericabout.html) | [Link](http://intellijs.cf/ericabout) |
 Ak Prathipati | [Link](link) | [Link](link) |
