@@ -11,7 +11,12 @@ Yajat Yadav | yajatyadav | [Issues](https://github.com/yajatyadav/intellijs/labe
 Eric Wang | elw55555 | [Issues](https://github.com/yajatyadav/intellijs/labels/Eric%20Wang) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aelw55555) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=elw55555) | [Profile](https://github.com/elw55555) |
 Ak Prathipati | akprathipati | [Issues](https://github.com/yajatyadav/intellijs/labels/Akshit%20Prathipati) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aakprathipati) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=akprathipati) | [Profile](https://github.com/akprathipati) |
 
-Week 1 + Week 2 not included - switched teams and created new repository; starting over
+### Week 1 + Week 2 not included - switched teams and created new repository; starting over
 
-Week 3 (12/13-12/17)
-
+### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
+Name | Link to code |
+Kyle Myint | 
+Charlie Zhu |
+Yajat Yadav | 
+Eric Wang | 
+Ak Prathipati | 
