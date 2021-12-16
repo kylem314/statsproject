@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{layout}" lang="en">
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <!-- Start of head content specific to page -->
@@ -88,12 +87,17 @@
 
     <table>
 
-        <tbody>
         <tr>
-<!--            <td th:text="${datetime}">TimeStamp</td>-->
-<!--            <td th:text="${aqi}">Air Quality Index</td>-->
+            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> TimeStamp of Measurement</td>
+            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Air Quality Index Measured at San Diego</td>
         </tr>
-        </tbody>
+
+
+        <tr>
+            <td style = "font-size: 15px; color:#FF0000;"th:text="${datetime}">TimeStamp</td>
+            <td style = "font-size: 15px; color:#FF0000;"th:text="${aqi}">Air Quality Index</td>
+        </tr>
+
     </table>
 
 

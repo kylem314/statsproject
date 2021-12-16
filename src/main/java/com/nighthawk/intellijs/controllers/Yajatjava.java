@@ -38,8 +38,8 @@ class Yajatjava {
         JSONObject jo2 = (JSONObject) data.get(0);
 
         model.addAttribute("jo2", jo2);
-        model.addAttribute("datetime", jo2.get("datetime"));
-        model.addAttribute("aqi", jo2.get("aqi"));
+        model.addAttribute("datetime", (String) jo2.get("datetime"));
+        model.addAttribute("aqi", jo2.get("aqi").toString());
 
         return "yajat_about";
 
@@ -64,6 +64,7 @@ class Yajatjava {
         JSONObject jo2 = (JSONObject) data.get(0);
 
 
-        System.out.println(data);
+        System.out.println((String) jo2.get("datetime"));
+        System.out.println(jo2.get("aqi").toString());
     }
 }
