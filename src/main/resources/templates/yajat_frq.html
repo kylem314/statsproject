@@ -3,17 +3,138 @@
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <!-- Start of head content specific to page -->
-    <title>Unit FRQs</title>
+    <title>About Yajat Yadav</title>
     <!-- End of head content specific to page -->
-</div>
-</head>
+</div></head>
 
 <body th:style="'background-image:url(' + @{/images/mountain.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
 
 <div layout:fragment="content" th:remove="tag">
 
     <!-- Start of body content specific to page -->
-   <p> Test</p>
+    <p style = "font-size: 30px; color:#FF0000;"> Hello, this is Yajat's About Me Page. A fun fact about me is that my birthday falls on pi day!</p>
+
+    <!--    formula to find weekday used from https:`//cs.uwaterloo.ca/~alopez-o/math-faq/node73.html-->
+    <script type="text/javascript">
+        function birthday(){
+            var month = parseInt(document.getElementById("month").value);
+            var day = parseInt(document.getElementById("day").value);
+            var year = parseInt(document.getElementById("year").value);
+
+            if(month >= 3){var newmonth = month - 2;}
+            else if(month == 1){var newmonth = 11;}
+            else{var newmonth = 12;}
+
+            var century = Math.trunc(year/100);
+
+            if(month>=3){var newyear = year - (century * 100);}
+            else{var newyear = year - (century * 100) - 1;}
+
+            var sum = (day + Math.floor(2.6*(newmonth) - 0.2) - (2 * century) + newyear + Math.floor(newyear/4) + Math.floor(century/4));
+            if(sum < 0){var weekday = (-sum) % 7;}
+            else{var weekday = sum % 7;}
+
+            var days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            alert("You were born on a " + days_of_week[weekday] + "!");
+        }
+    </script>
+    <div class="contact" style="height: 35vh;">
+        <div class="row justify-content-left" style="margin: 2%;">
+            <form action="/yajat_about" method="GET" id="yajataboutForm">
+                <div>
+                    <label>Find out what day of the week you were born on! Enter the day were you born on</label>
+                    <input name="name2" id="month" placeholder="Month">
+                    <input name="name1" id="day" placeholder="Day">
+                    <input name="name3" id="year" placeholder="Year">
+                    <button onclick = "birthday()" id="button1">Submit</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <p>
+        <img alt="" src="https://www.w3schools.com/images/lamp.jpg"
+             style="height: 85px; width: 198px" id="imagetochange" />
+    </p>
+
+
+    <div>
+        <!--            <label>What answer did you get?</label>-->
+        <!--            <input name="name2" id="Question" placeholder="Question">-->
+        <button onclick = "image_switch()" id="button2">Click to Grayscale the Image</button>
+        <!-- test 4 -->
+    </div>
+
+
+    <script type="text/javascript">
+        function image_switch(){
+            if(document.getElementById("imagetochange").style.filter == ""){
+                document.getElementById("imagetochange").style.filter = "grayscale(100%)";
+            }
+            else{
+
+                document.getElementById("imagetochange").style.filter = ""
+
+            }
+        }
+
+
+    </script>
+
+
+
+
+<!--    <table>-->
+
+<!--        <tr>-->
+<!--            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> TimeStamp of Measurement</td>-->
+<!--            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Air Quality Index Measured at San Diego</td>-->
+<!--        </tr>-->
+
+
+<!--        <tr>-->
+<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${datetime}">TimeStamp</td>-->
+<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${aqi}">Air Quality Index</td>-->
+<!--        </tr>-->
+
+<!--    </table>-->
+
+
+
+
+    <!--        <table class="miniTable">-->
+    <!--            <thead>-->
+    <!--            <tr>-->
+    <!--                <th:block th:each="map : ${mapsList}">-->
+    <!--                    <th:block th:each="mapEntry : ${map}">-->
+    <!--                        <td><a title="click me!" th:href="@{${mapEntry.value}}" target="_blank" th:text="${mapEntry.key}"></a></td>-->
+    <!--                    </th:block>-->
+    <!--                </th:block>-->
+    <!--            </tr>-->
+    <!--            </thead>-->
+    <!--        </table>-->
+    <!--        <hr style="background-color:var(&#45;&#45;text)">-->
+    <!--        <div>-->
+    <!--            <center>-->
+    <!--                <p class="smallTitle">Song API</p>-->
+    <!--                <form action="/about/yajat" method="GET">-->
+    <!--                    <label style="color:var(&#45;&#45;text)" for="artistField">Search Genius</label>-->
+    <!--                    <input id="artistField" name="artist" type="text">-->
+    <!--                    <input type="submit">-->
+    <!--                </form>-->
+    <!--                <div style="padding-top:20px">-->
+
+    <!--                    <img th:src="@{${song_art_url}}" width="200px" height="200px">-->
+    <!--                    <p style="color:var(&#45;&#45;text);padding-top:15px" th:text="${song_name}"></p>-->
+
+    <!--                </div>-->
+
+    <!--            </center>-->
+
+
+
+    <!--</div>-->
 
 
 </div>
@@ -23,3 +144,28 @@
 
 </html>
 
+
+
+
+
+
+<!--&lt;!&ndash; This page is illustrative and contains ideas about HTML formatting &ndash;&gt;-->
+<!--<!DOCTYPE HTML>-->
+<!--&lt;!&ndash; Signals to the Layout Dialect which layout should be used to decorate this View &ndash;&gt;-->
+<!--<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"-->
+<!--      lang="en">-->
+
+<!--<head>-->
+<!--    <div layout:fragment="header" th:remove="tag">-->
+<!--        <title>Unit FRQs</title>-->
+<!--    </div>-->
+<!--</head>-->
+<!--&lt;!&ndash; layout::fragment="content" is heart of ThymeLeaf layout &ndash;&gt;-->
+<!--<body>-->
+<!--<div layout:fragment="content" th:remove="tag">-->
+<!--    <p style = "font-size: 30px; color:#0059ff;"> AP Unit FRQs</p>-->
+
+<!--</div>-->
+<!--</body>-->
+
+<!--</html>-->
