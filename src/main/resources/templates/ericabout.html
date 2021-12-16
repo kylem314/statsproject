@@ -61,7 +61,7 @@ Question 1
 <br>}
 <br>else
 <br>{
-<br>option1="Sorry you can't make it";
+<br>option1="Sorry you can't do  it";
 <br>}
 <br>
 <br>Part D: Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise.
@@ -75,7 +75,7 @@ Question 1
 <br>System.out.println("false");
 <br>}
 <br>
-<br>Question 2
+<br>Question
 <br>
 <br>Write the method drawSquare below.
 <br>/** Precondition: 0 ≤ x < 10, 0 < y ≤ 10, and len > 0.
@@ -87,7 +87,7 @@ Question 1
 <br>*/
 <br>public void drawSquare(int x, int y, int len)
 <br>
-<br>public class Draw {
+<br>public class draw {
 <br>
 <br>public void drawLine(int x1, int y1, int x2, int y2) {
 <br>
@@ -97,13 +97,13 @@ Question 1
 <br>if ((x - xsum) > (y - ydiff)) xsum = ydiff+x-y;
 <br>else ydiff = xsum+y-x;
 <br>
-<br>drawLine(x, y, x, ydiff);
-<br>drawLine(x, y, xsum, y);
+<br>drawLine(x, y, x, diff);
+<br>drawLine(x, y, xsum, y+x);
 <br>drawLine(x, ydiff, xsum, ydiff);
 <br>drawLine(xsum, y, xsum, ydiff);
 <br>}
 <br>
-<br>int side = xsum - x;
+<br>int side = xsum - y;
 <br>System.out.println("side length = " + side + ", area = " + Math.pow(side, 2));
 </body>
 </html>
