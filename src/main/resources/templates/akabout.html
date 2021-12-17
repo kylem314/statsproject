@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AK's Page</title>
+  <title>Eric's Page</title>
 </head>
 <body>
-Question A
+<p style = "font-size: 30px; color:rgba(170,0,255,0.94); text-align:center;">Unit 3 FRQs</p>
+Question 1
 <br>
 <br>Part A: Write a code segment that prints "attending" if rsvp is true and prints "not attending" otherwise.
 <br>Write the code segment below.
@@ -61,7 +62,7 @@ Question A
 <br>}
 <br>else
 <br>{
-<br>option1="Sorry you can't make it";
+<br>option1="Sorry you can't do  it";
 <br>}
 <br>
 <br>Part D: Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise.
@@ -75,7 +76,7 @@ Question A
 <br>System.out.println("false");
 <br>}
 <br>
-<br>Question B
+<br>Question
 <br>
 <br>Write the method drawSquare below.
 <br>/** Precondition: 0 ≤ x < 10, 0 < y ≤ 10, and len > 0.
@@ -87,7 +88,7 @@ Question A
 <br>*/
 <br>public void drawSquare(int x, int y, int len)
 <br>
-<br>public class Draw {
+<br>public class draw {
 <br>
 <br>public void drawLine(int x1, int y1, int x2, int y2) {
 <br>
@@ -97,13 +98,92 @@ Question A
 <br>if ((x - xsum) > (y - ydiff)) xsum = ydiff+x-y;
 <br>else ydiff = xsum+y-x;
 <br>
-<br>drawLine(x, y, x, ydiff);
-<br>drawLine(x, y, xsum, y);
+<br>drawLine(x, y, x, diff);
+<br>drawLine(x, y, xsum, y+x);
 <br>drawLine(x, ydiff, xsum, ydiff);
 <br>drawLine(xsum, y, xsum, ydiff);
 <br>}
 <br>
-<br>int side = xsum - x;
+<br>int side = xsum - y;
 <br>System.out.println("side length = " + side + ", area = " + Math.pow(side, 2));
 </body>
 </html>
+<div>
+  <p style = "font-size: 30px; color:rgba(170,0,255,0.94); text-align:center;">Unit 2 FRQs</p>
+
+  <br>Consider the following class.
+  <br>public class LightSequence
+  <br>{
+  <br>// attributes not shown
+  <br>
+  <br>/** The parameter seq is the initial sequence used for
+  <br>* the light display
+  <br>*/
+  <br>public LightSequence(String seq)
+  <br>{ / implementation not shown / }
+  <br>
+  <br>/** Inserts the string segment in the current sequence,
+  <br>* starting at the index ind. Returns the new sequence.
+  <br>*/
+  <br>public String insertSegment(String segment, int ind)
+  <br>{ / implementation not shown / }
+  <br>
+  <br>/** Updates the sequence to the value in seq
+  <br>*/
+  <br>public void changeSequence(String seq)
+  <br>{ / implementation not shown / }
+  <br>
+  <br>/** Uses the current sequence to turn the light on and off
+  <br> * for the show
+  <br> */
+  <br> public void display()
+  <br> { / implementation not shown / }
+  <br>}
+
+  <br>Part A: Write a statement to create a LightSequence object gradShow that has the initial light sequence "0101 0101 0101".
+  <br>Write the statement below.
+  <br>
+  <br>LightSequence gradShow = new LightSequence("0101 0101 0101");
+  <br>
+  <br>
+  <br>Part B: Write a statement that will call the display method to display the light sequence for the gradShow object.
+  <br>Write the statement below.
+  <br>
+  <br>
+  <br>gradShow.display();
+  <br>
+  <br>Part C: Write a statement that will be used to update the gradShow light sequence to "0011 0011 0011".
+  <br>Write the statement below.
+  <br>
+  <br>gradShow.changeSequence("0011 0011 0011");
+  <br>
+  <br>
+  <br>Part D: Write a code segment that will call the insertSegment method to insert the segment "1111 1111" in the current sequence for gradShow at index 4. The resulting sequence will be stored in the string resultSeq.
+  <br> Write the code segment below.
+  <br>
+  <br>
+  <br>  String resultSeq = gradShow.insertSegment("1111 1111", 4);
+  <br>
+  <br>
+  <br>   Part E: Assume that the string oldSeq has been properly declared and initialized and contains the string segment. Write a code segment that will remove the first occurrence of segment from oldSeq and store it in the string newSeq. Consider the following examples.
+  <br> If oldSeq is "1100000111" and segment is "11", then "00000111" should be stored in newSeq.
+  <br> If oldSeq is "0000011" and segment is "11", then "00000" should be stored in newSeq.
+  <br> If oldSeq is "1100000111" and segment is "00", then "11000111" should be stored in newSeq.
+  <br> Write the code segment below. Your code segment should meet all specifications and
+  <br> conform to the examples.
+  <br>
+  <br> int start = oldSeq.indexOf(segment);
+  <br> String newSeq = oldSeq.substring(0,start) + oldSeq.substring(start+segment.length());
+
+  <br>
+  <br> Part F: Two lights will be arranged on a two-dimensional plane. The vertical distance between the two lights is stored in the double variable a. The horizontal distance between the two lights is stored in the double variable b.The straight-line distance between the two lights is given by the formula .Write a code segment that prints the straight-line distance between the two lights according to the formula above.
+  <br>
+  <br>
+  <br>
+  <br> System.out.println(Math.sqrt(a*a + b*b));
+
+
+
+
+
+</div>
