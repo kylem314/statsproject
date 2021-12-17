@@ -3,12 +3,13 @@
       xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{layout}" lang="en">
 
-
-<head><div layout:fragment="head" th:remove="tag">
+<div layout:fragment="head" th:remove="tag">
     <!-- Start of head content specific to page -->
     <title>About Yajat Yadav</title>
     <!-- End of head content specific to page -->
-</div></head>
+</div>
+
+<body th:style="'background-image:url(' + @{/images/gradient.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
 
 
 <div layout:fragment="body" th:remove="tag">
@@ -90,15 +91,19 @@
     <table>
 
         <tr>
-            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> TimeStamp of Measurement</td>
-            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Air Quality Index Measured at San Diego</td>
+            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Temperature (F)</td>
+            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Wind Speed (mph)</td>
+            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Humidity</td>
+            <td style = "font-size: 20px; color:rgba(0,255,55,0.36);"> Last Updated</td>
         </tr>
 
 
-<!--        <tr>-->
-<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${datetime}">TimeStamp</td>-->
-<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${aqi}">Air Quality Index</td>-->
-<!--        </tr>-->
+        <tr>
+<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${temp_f}">Temperature (F)</td>-->
+<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${wind_mph}">Wind Speed (mph)</td>-->
+<!--            <td style = "font-size: 15px; color:#FF0000;"th:text="${humidity}">Humidity</td>-->
+            <td style = "font-size: 15px; color:#FF0000;"th:text="${last_updated}">Last Updated</td>
+        </tr>
 
     </table>
 
@@ -203,7 +208,7 @@
         <br>}
         <br>
         <br>int side = xsum - x;
-        <br>System.out.println("side length = " + side + ", area = " + Math.pow(side, 2));
+        <br>System.out.println("side length = " + side + ", area = " + (side*side));
 
 
     </div>
@@ -291,44 +296,45 @@
 
 
 
-    <!--        <table class="miniTable">-->
-    <!--            <thead>-->
-    <!--            <tr>-->
-    <!--                <th:block th:each="map : ${mapsList}">-->
-    <!--                    <th:block th:each="mapEntry : ${map}">-->
-    <!--                        <td><a title="click me!" th:href="@{${mapEntry.value}}" target="_blank" th:text="${mapEntry.key}"></a></td>-->
-    <!--                    </th:block>-->
-    <!--                </th:block>-->
-    <!--            </tr>-->
-    <!--            </thead>-->
-    <!--        </table>-->
-    <!--        <hr style="background-color:var(&#45;&#45;text)">-->
-    <!--        <div>-->
-    <!--            <center>-->
-    <!--                <p class="smallTitle">Song API</p>-->
-    <!--                <form action="/about/yajat" method="GET">-->
-    <!--                    <label style="color:var(&#45;&#45;text)" for="artistField">Search Genius</label>-->
-    <!--                    <input id="artistField" name="artist" type="text">-->
-    <!--                    <input type="submit">-->
-    <!--                </form>-->
-    <!--                <div style="padding-top:20px">-->
-
-    <!--                    <img th:src="@{${song_art_url}}" width="200px" height="200px">-->
-    <!--                    <p style="color:var(&#45;&#45;text);padding-top:15px" th:text="${song_name}"></p>-->
-
-    <!--                </div>-->
-
-    <!--            </center>-->
-
-
-
-    <!--</div>-->
 
 
 </div>
 
 <!-- End of body content specific to page -->
 
-
+</body>
 </html>
 
+
+<!--        <table class="miniTable">-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th:block th:each="map : ${mapsList}">-->
+<!--                    <th:block th:each="mapEntry : ${map}">-->
+<!--                        <td><a title="click me!" th:href="@{${mapEntry.value}}" target="_blank" th:text="${mapEntry.key}"></a></td>-->
+<!--                    </th:block>-->
+<!--                </th:block>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--        </table>-->
+<!--        <hr style="background-color:var(&#45;&#45;text)">-->
+<!--        <div>-->
+<!--            <center>-->
+<!--                <p class="smallTitle">Song API</p>-->
+<!--                <form action="/about/yajat" method="GET">-->
+<!--                    <label style="color:var(&#45;&#45;text)" for="artistField">Search Genius</label>-->
+<!--                    <input id="artistField" name="artist" type="text">-->
+<!--                    <input type="submit">-->
+<!--                </form>-->
+<!--                <div style="padding-top:20px">-->
+
+<!--                    <img th:src="@{${song_art_url}}" width="200px" height="200px">-->
+<!--                    <p style="color:var(&#45;&#45;text);padding-top:15px" th:text="${song_name}"></p>-->
+
+<!--                </div>-->
+
+<!--            </center>-->
+
+
+
+<!--</div>-->

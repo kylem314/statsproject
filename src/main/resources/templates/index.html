@@ -6,12 +6,18 @@
       layout:decorate="~{layout}" lang="en">
 
 <!-- <head> -->
-<th:block layout:fragment="head" th:remove="tag">
-    <title>Draw</title>
-</th:block>
+<div layout:fragment="head" th:remove="tag">
+    <!-- Page specific head additions -->
+    <title>IntelliJs College Consulting</title>
+</div>
 
 
+<!--<th:block layout:fragment="head" th:remove="tag">-->
+<!--    <title>Draw</title>-->
+<!--</th:block>-->
 
+
+<div layout:fragment="body" th:remove="tag">
 <div>
     <label> Enter the side length and (x,y) of the square</label>
     <input name="form_name" id="length" placeholder="length">
@@ -19,12 +25,7 @@
     <input name="form_y" id="y" placeholder="y">
     <button onclick = "drawSquare()" id="button1">Submit</button>
 
-</div>
 
-
-
-
-<th:block layout:fragment="body" th:remove="tag">
     <h1 class="text-center">JavaScript - Draw on Canvas</h1>
     <div class="container py-4 bg-primary" style="text-align:center;">
         <canvas id="canvas" width="512" height="384" ></canvas>
@@ -109,7 +110,8 @@
         }
         // hack 2: plot line or square on grid from user input according
     </script>
-</th:block>
+</div>
+</div>
 
 </html>
 
