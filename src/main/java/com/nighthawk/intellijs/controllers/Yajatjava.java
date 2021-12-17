@@ -1,16 +1,16 @@
 package com.nighthawk.intellijs.controllers;
 
-
 import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.ui.Model;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.HashMap;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 import java.io.IOException;
@@ -35,7 +35,7 @@ import java.net.http.HttpResponse;
 
 
 @Controller
-class Yajatjava {
+public class Yajatjava {
     @GetMapping("/yajat_about")
     public String weather(Model model) throws IOException, InterruptedException, ParseException {
 
@@ -49,17 +49,20 @@ class Yajatjava {
         Object obj = new JSONParser().parse(response.body());
         JSONObject jo = (JSONObject) obj;
 
-        JSONObject data = (JSONObject) jo.get("current");
+        JSONObject current_data = (JSONObject) jo.get("current");
 
-        String update = data.get("last_updated").toString();
+
+
+//        String update = data.get("last_updated").toString();
 
 
 
         model.addAttribute("jo", jo);
-//        model.addAttribute("temp", data.get("temp_f").toString() );
-//        model.addAttribute("wind_mph", data.get("wind_mph").toString() );
-//        model.addAttribute("humidity", data.get("humidity").toString() );
-        model.addAttribute("last_updated", update );
+        model.addAttribute("data", jo.get("current"));
+//        model.addAttribute("temp", current_data.get("temp_f") );
+//        model.addAttribute("wind_mph", current_data.get("wind_mph").toString() );
+//        model.addAttribute("humidity", current_data.get("humidity").toString() );
+//        model.addAttribute("last_updated", update );
 
         return "yajat_about";
 
@@ -68,6 +71,12 @@ class Yajatjava {
 
 //
 //    public static void main(String[] args) throws IOException, InterruptedException, ParseException {
+//        System.out.println(jo.get);
+
+
+
+
+    }
 //        HttpRequest request = HttpRequest.newBuilder()
 //                .uri(URI.create("https://weatherapi-com.p.rapidapi.com/current.json?q=San%20Diego"))
 //                .header("x-rapidapi-host", "weatherapi-com.p.rapidapi.com")
@@ -83,7 +92,7 @@ class Yajatjava {
 //
 //        JSONObject data = (JSONObject) jo.get("current");
 //
-//        System.out.println(data.get("temp_f").toString());
+//        System.out.println(jo.get("current").toString());
 //
 //System.out.println(jo.get("current"));
 //        System.out.println(data.get("temp_f")  );
@@ -92,5 +101,6 @@ class Yajatjava {
 //        System.out.println( data.get("last_updated").toString()  );
 ////        System.out.println(jo2.get("aqi").toString());
 //    }
-}
+
+
 
