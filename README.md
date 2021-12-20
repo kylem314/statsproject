@@ -20,7 +20,7 @@ Our wiki offers in-depth documentation of various aspects of our project.
 ### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
 [Review ticket](https://github.com/yajatyadav/intellijs/issues/10)
 Name | Link to code | Link to page |
------ | ----- | ----- |
+----- | ----- | ------ |
 Kyle Myint | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/kyleabout) | [Link](http://intellijs.cf/kyleabout) |
 Charlie Zhu | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/charlieabout.html) | [Link](http://intellijs.cf/charlieabout) |
 Yajat Yadav | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/yajat_about.html) | [Link](http://intellijs.cf/yajat_about) |
