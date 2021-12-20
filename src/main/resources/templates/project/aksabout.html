@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AK's Page</title>
+</head>
+<body>
+Question A
+<br>
+<br>Part A: Write a code segment that prints "attending" if rsvp is true and prints "not attending" otherwise.
+<br>Write the code segment below.
+<br>
+<br>if (rsvp) {
+<br>System.out.println("attending");
+<br>}
+<br>else {
+<br>System.out.println("not attending");
+<br>}
+<br>
+<br>Part B: Write a code segment that prints the food item associated with selection. For example, if selection is 3, the code segment should print "pasta".
+<br>Write the code segment below. Your code segment should meet all specifications and conform to the example.
+<br>
+<br>if(selection == 1)
+<br>{
+<br>System.out.println("beef");
+<br>}
+<br>else if(selection == 2)
+<br>{
+<br>System.out.println("chicken");
+<br>}
+<br>else if(selection == 3)
+<br>{
+<br>System.out.println("pasta");
+<br>}
+<br>else
+<br>{
+<br>System.out.println("fish");
+<br>}
+<br>
+<br>Part C: Write a code segment that will store a dinner selection in option1 based on the values of rsvp and selection. The intended behavior of the code segment is described below.
+<br>If rsvp is true, the code segment should store in option1 a string indicating the person’s attendance and food choice. For example, if rsvp is true and selection is 1, the following string should be stored in option1.
+<br>"Thanks for attending. You will be served beef."
+<br>If rsvp is false, the following string should be stored in option1, regardless of the value of selection.
+<br>"Sorry you can't make it."
+<br>Write the code segment below. Your code segment should meet all specifications and conform to the examples.
+<br>
+<br>if(rsvp)
+<br>{
+<br>if (selection == 1){
+<br>option1="Thanks for attending. You will be served beef";
+<br>}
+<br>else if (selection == 2){
+<br>option1="Thanks for attending. You will be served chicken";
+<br>}
+<br>else if (selection == 3){
+<br>option1="Thanks for attending. You will be served pasta";
+<br>}
+<br>else{
+<br>option1="Thanks for attending. You will be served fish";
+<br>}
+<br>}
+<br>else
+<br>{
+<br>option1="Sorry you can't make it";
+<br>}
+<br>
+<br>Part D: Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise.
+<br>Write the code segment below.
+<br>
+<br>if(option1.equals(option2))
+<br>{
+<br>System.out.println("true");
+<br>}
+<br>else{
+<br>System.out.println("false");
+<br>}
+<br>
+<br>Question B
+<br>
+<br>Write the method drawSquare below.
+<br>/** Precondition: 0 ≤ x < 10, 0 < y ≤ 10, and len > 0.
+<br>* Draws a square on a 10-by-10 xy-coordinate grid
+<br>* and prints the square’s side length and area.
+<br>* The upper left corner of the square will be located
+<br>* at the coordinate (x, y) and the side length of the
+<br>* square will be len (or as large as will fit in the grid).
+<br>*/
+<br>public void drawSquare(int x, int y, int len)
+<br>
+<br>public class Draw {
+<br>
+<br>public void drawLine(int x1, int y1, int x2, int y2) {
+<br>
+<br>public void drawSquare(int x, int y, int len) {
+<br>int xsum = x + len; int ydiff = y - len;
+<br>if (xsum > 10) xsum = 10 - x; if (ydiff < 0) ydiff = 0 - y;
+<br>if ((x - xsum) > (y - ydiff)) xsum = ydiff+x-y;
+<br>else ydiff = xsum+y-x;
+<br>
+<br>drawLine(x, y, x, ydiff);
+<br>drawLine(x, y, xsum, y);
+<br>drawLine(x, ydiff, xsum, ydiff);
+<br>drawLine(xsum, y, xsum, ydiff);
+<br>}
+<br>
+<br>int side = xsum - x;
+<br>System.out.println("side length = " + side + ", area = " + Math.pow(side, 2));
+</body>
+</html>
