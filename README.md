@@ -26,3 +26,6 @@ Charlie Zhu | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/
 Yajat Yadav | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/yajat_about.html) | [Link](http://intellijs.cf/yajat_about) |
 Eric Wang | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/ericabout.html) | [Link](http://intellijs.cf/ericabout) |
 Ak Prathipati | [Link](https://github.com/yajatyadav/intellijs/commit/7b31523e7ee1fa9ae5863a146fcd0e0dbc52a04d) | [Link](http://intellijs.cf/akabout) |
+
+
+### Week 4 (1/3 - 1/7)
