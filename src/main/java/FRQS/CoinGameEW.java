@@ -37,12 +37,11 @@ public class CoinGameEW {
         String str = "CCAAAAATTT!";
         longestStreak(str);
     }
-}
 
     /** Question 2 Part A
 
      */
-    public class CoingameEW {
+
         public int getPlayer2Move(int round) {
             int result = 0;
 
