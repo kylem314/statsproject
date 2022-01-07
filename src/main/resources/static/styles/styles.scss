@@ -92,7 +92,7 @@
       text-decoration: none;
     }
 
-    &--btn:after {
+    &--btn:after { // code animates home page button so that it transitions to red when hovered
       position: absolute;
       content: '';
       top: 0;

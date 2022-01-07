@@ -70,7 +70,7 @@
       color: $light;
 
       &:hover {
-        background: $orangeRed;
+        background: $orangeRed;  // changes button on navbar when hovered over
         transition: all 0.3s ease;
       }
     }
