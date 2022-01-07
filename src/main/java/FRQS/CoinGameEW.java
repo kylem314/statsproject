@@ -67,7 +67,7 @@ public class CoinGameEW {
          */
 
 
-        public class Coingameew2 {
+
             private int startingCoins;
             private int maxRounds;
             public int getPlayer1Move;
@@ -140,5 +140,3 @@ public class CoinGameEW {
 
             }
         }
-    }
-
