@@ -44,7 +44,7 @@
     margin-right: 24px;
 
     @include tablet {
-      display: none; // gets rid of the links when on a tablet device
+      display: none; // gets rid of the links at the top when on a tablet device
     }
 
     &--links {
