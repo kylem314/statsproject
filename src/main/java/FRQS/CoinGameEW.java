@@ -66,8 +66,6 @@ public class CoinGameEW {
          * Question 2 Part B
          */
 
-
-        public class Coingameew2 {
             private int startingCoins;
             private int maxRounds;
             public int getPlayer1Move;
