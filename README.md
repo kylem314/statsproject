@@ -12,7 +12,7 @@ Eric Wang | elw55555 | [Issues](https://github.com/yajatyadav/intellijs/labels/E
 Ak Prathipati | akprathipati | [Issues](https://github.com/yajatyadav/intellijs/labels/Akshit%20Prathipati) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aakprathipati) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=akprathipati) | [Profile](https://github.com/akprathipati) | [Add Repl]() |
 
 ## Wiki
-Our wiki offers in-depth documentation of various aspects of our project.
+Our wiki offers in-depth documentation for various aspects of our project.
 ##### [Deployment](https://github.com/yajatyadav/intellijs/wiki/Deployment)
 ##### [Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
 ##### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
