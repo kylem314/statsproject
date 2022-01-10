@@ -11,297 +11,304 @@
 
 
 
-<div layout:fragment="body" th:remove="tag" th:style="'background-image:url(' + @{/images/gradient.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'">
+<div layout:fragment="body" th:remove="tag">
+
+    <div style = "background-color: #bde5de">
+        <p style = "font-size: 30px; color:#FF0000;"> Hello, this is Yajat's About Me Page. A fun fact about me is that my birthday falls on pi day!</p>
+
+        <!--    formula to find weekday used from https:`//cs.uwaterloo.ca/~alopez-o/math-faq/node73.html-->
+        <script type="text/javascript">
+            function birthday(){
+                var month = parseInt(document.getElementById("month").value);
+                var day = parseInt(document.getElementById("day").value);
+                var year = parseInt(document.getElementById("year").value);
+
+                if(month >= 3){var newmonth = month - 2;}
+                else if(month == 1){var newmonth = 11;}
+                else{var newmonth = 12;}
+
+                var century = Math.trunc(year/100);
+
+                if(month>=3){var newyear = year - (century * 100);}
+                else{var newyear = year - (century * 100) - 1;}
+
+                var sum = (day + Math.floor(2.6*(newmonth) - 0.2) - (2 * century) + newyear + Math.floor(newyear/4) + Math.floor(century/4));
+                if(sum < 0){var weekday = (-sum) % 7;}
+                else{var weekday = sum % 7;}
+
+                var days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                alert("You were born on a " + days_of_week[weekday] + "!");
+            }
+        </script>
+        <div class="contact" style="height: 35vh;">
+            <div class="row justify-content-left" style="margin: 2%;">
+                <form action="/yajat_about" method="GET" id="yajataboutForm">
+                    <div>
+                        <label>Find out what day of the week you were born on! Enter the day were you born on</label>
+                        <input name="name2" id="month" placeholder="Month">
+                        <input name="name1" id="day" placeholder="Day">
+                        <input name="name3" id="year" placeholder="Year">
+                        <button onclick = "birthday()" id="button1">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <p>
+            <img alt="" src="https://www.w3schools.com/images/lamp.jpg"
+                 style="height: 85px; width: 198px" id="imagetochange" />
+        </p>
+
+
+        <div>
+            <!--            <label>What answer did you get?</label>-->
+            <!--            <input name="name2" id="Question" placeholder="Question">-->
+            <button onclick = "image_switch()" id="button2">Click to Grayscale the Image</button>
+            <!-- test 4 -->
+        </div>
+
+
+        <script type="text/javascript">
+            function image_switch(){
+                if(document.getElementById("imagetochange").style.filter == ""){
+                    document.getElementById("imagetochange").style.filter = "grayscale(100%)";
+                }
+                else{
+
+                    document.getElementById("imagetochange").style.filter = ""
+
+                }
+            }
+
+
+        </script>
+
+
+        <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+
+            <tr>
+                <td style = "font-size: 28px; color:rgb(255,68,0);" colspan = "4"> San Diego Current Weather</td>
+            </tr>
+
+            <tr>
+                <td style = "font-size: 20px; color:rgb(0,89,255);"> Temperature (F)</td>
+                <td style = "font-size: 20px; color:rgb(0,89,255);"> Wind Speed (mph)</td>
+                <td style = "font-size: 20px; color:rgb(0,89,255);"> Humidity</td>
+                <td style = "font-size: 20px; color:rgb(0,89,255);"> Last Updated</td>
+            </tr>
+
+
+            <tr>
+                <td style = "font-size: 15px; color:#FF0000;"th:text="${temp}">Temperature (F)</td>
+                <td style = "font-size: 15px; color:#FF0000;"th:text="${wind_mph}">Wind Speed (mph)</td>
+                <td style = "font-size: 15px; color:#FF0000;"th:text="${humidity}">Humidity</td>
+                <td style = "font-size: 15px; color:#FF0000;"th:text="${last_updated}">Last Updated</td>
+            </tr>
+
+        </table>
+
+        <div>
+            <p style = "font-size: 30px; color:rgba(170,0,255,0.94); text-align:center;">Unit 3 FRQs</p>
+            Question 1
+            <br>
+            <br>Part A: Write a code segment that prints "attending" if rsvp is true and prints "not attending" otherwise.
+            <br>Write the code segment below.
+            <br>
+            <br>if (rsvp) {
+            <br>System.out.println("attending");
+            <br>}
+            <br>else {
+            <br>System.out.println("not attending");
+            <br>}
+            <br>
+            <br>Part B: Write a code segment that prints the food item associated with selection. For example, if selection is 3, the code segment should print "pasta".
+            <br>Write the code segment below. Your code segment should meet all specifications and conform to the example.
+            <br>
+            <br>if(selection == 1)
+            <br>{
+            <br>System.out.println("beef");
+            <br>}
+            <br>else if(selection == 2)
+            <br>{
+            <br>System.out.println("chicken");
+            <br>}
+            <br>else if(selection == 3)
+            <br>{
+            <br>System.out.println("pasta");
+            <br>}
+            <br>else
+            <br>{
+            <br>System.out.println("fish");
+            <br>}
+            <br>
+            <br>Part C: Write a code segment that will store a dinner selection in option1 based on the values of rsvp and selection. The intended behavior of the code segment is described below.
+            <br>If rsvp is true, the code segment should store in option1 a string indicating the person’s attendance and food choice. For example, if rsvp is true and selection is 1, the following string should be stored in option1.
+            <br>"Thanks for attending. You will be served beef."
+            <br>If rsvp is false, the following string should be stored in option1, regardless of the value of selection.
+            <br>"Sorry you can't make it."
+            <br>Write the code segment below. Your code segment should meet all specifications and conform to the examples.
+            <br>
+            <br>if(rsvp)
+            <br>{
+            <br>if (selection == 1){
+            <br>option1="Thanks for attending. You will be served beef";
+            <br>}
+            <br>else if (selection == 2){
+            <br>option1="Thanks for attending. You will be served chicken";
+            <br>}
+            <br>else if (selection == 3){
+            <br>option1="Thanks for attending. You will be served pasta";
+            <br>}
+            <br>else{
+            <br>option1="Thanks for attending. You will be served fish";
+            <br>}
+            <br>}
+            <br>else
+            <br>{
+            <br>option1="Sorry you can't make it";
+            <br>}
+            <br>
+            <br>Part D: Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise.
+            <br>Write the code segment below.
+            <br>
+            <br>if(option1.equals(option2))
+            <br>{
+            <br>System.out.println("true");
+            <br>}
+            <br>else{
+            <br>System.out.println("false");
+            <br>}
+            <br>
+            <br>Question 2
+            <br>
+            <br>Write the method drawSquare below.
+            <br>/** Precondition: 0 ≤ x < 10, 0 < y ≤ 10, and len > 0.
+            <br>* Draws a square on a 10-by-10 xy-coordinate grid
+            <br>* and prints the square’s side length and area.
+            <br>* The upper left corner of the square will be located
+            <br>* at the coordinate (x, y) and the side length of the
+            <br>* square will be len (or as large as will fit in the grid).
+            <br>*/
+            <br>public void drawSquare(int x, int y, int len)
+            <br>
+            <br>public class Draw {
+            <br>
+            <br>public void drawLine(int x1, int y1, int x2, int y2) {
+            <br>
+            <br>public void drawSquare(int x, int y, int len) {
+            <br>int xsum = x + len; int ydiff = y - len;
+            <br>if (xsum > 10) xsum = 10 - x; if (ydiff < 0) ydiff = 0 - y;
+            <br>if ((x - xsum) > (y - ydiff)) xsum = ydiff+x-y;
+            <br>else ydiff = xsum+y-x;
+            <br>
+            <br>drawLine(x, y, x, ydiff);
+            <br>drawLine(x, y, xsum, y);
+            <br>drawLine(x, ydiff, xsum, ydiff);
+            <br>drawLine(xsum, y, xsum, ydiff);
+            <br>}
+            <br>
+            <br>int side = xsum - x;
+            <br>System.out.println("side length = " + side + ", area = " + (side*side));
+
+
+        </div>
+
+        <div>
+            <p style = "font-size: 30px; color:rgba(170,0,255,0.94); text-align:center;">Unit 2 FRQs</p>
+
+            <br>Consider the following class.
+            <br>public class LightSequence
+            <br>{
+            <br>// attributes not shown
+            <br>
+            <br>/** The parameter seq is the initial sequence used for
+            <br>* the light display
+            <br>*/
+            <br>public LightSequence(String seq)
+            <br>{ / implementation not shown / }
+            <br>
+            <br>/** Inserts the string segment in the current sequence,
+            <br>* starting at the index ind. Returns the new sequence.
+            <br>*/
+            <br>public String insertSegment(String segment, int ind)
+            <br>{ / implementation not shown / }
+            <br>
+            <br>/** Updates the sequence to the value in seq
+            <br>*/
+            <br>public void changeSequence(String seq)
+            <br>{ / implementation not shown / }
+            <br>
+            <br>/** Uses the current sequence to turn the light on and off
+            <br> * for the show
+            <br> */
+            <br> public void display()
+            <br> { / implementation not shown / }
+            <br>}
+
+            <br>Part A: Write a statement to create a LightSequence object gradShow that has the initial light sequence "0101 0101 0101".
+            <br>Write the statement below.
+            <br>
+            <br>LightSequence gradShow = new LightSequence("0101 0101 0101");
+            <br>
+            <br>
+            <br>Part B: Write a statement that will call the display method to display the light sequence for the gradShow object.
+            <br>Write the statement below.
+            <br>
+            <br>
+            <br>gradShow.display();
+            <br>
+            <br>Part C: Write a statement that will be used to update the gradShow light sequence to "0011 0011 0011".
+            <br>Write the statement below.
+            <br>
+            <br>gradShow.changeSequence("0011 0011 0011");
+            <br>
+            <br>
+            <br>Part D: Write a code segment that will call the insertSegment method to insert the segment "1111 1111" in the current sequence for gradShow at index 4. The resulting sequence will be stored in the string resultSeq.
+            <br> Write the code segment below.
+            <br>
+            <br>
+            <br>  String resultSeq = gradShow.insertSegment("1111 1111", 4);
+            <br>
+            <br>
+            <br>   Part E: Assume that the string oldSeq has been properly declared and initialized and contains the string segment. Write a code segment that will remove the first occurrence of segment from oldSeq and store it in the string newSeq. Consider the following examples.
+            <br> If oldSeq is "1100000111" and segment is "11", then "00000111" should be stored in newSeq.
+            <br> If oldSeq is "0000011" and segment is "11", then "00000" should be stored in newSeq.
+            <br> If oldSeq is "1100000111" and segment is "00", then "11000111" should be stored in newSeq.
+            <br> Write the code segment below. Your code segment should meet all specifications and
+            <br> conform to the examples.
+            <br>
+            <br> int start = oldSeq.indexOf(segment);
+            <br> String newSeq = oldSeq.substring(0,start) + oldSeq.substring(start+segment.length());
+
+            <br>
+            <br> Part F: Two lights will be arranged on a two-dimensional plane. The vertical distance between the two lights is stored in the double variable a. The horizontal distance between the two lights is stored in the double variable b.The straight-line distance between the two lights is given by the formula .Write a code segment that prints the straight-line distance between the two lights according to the formula above.
+            <br>
+            <br>
+            <br>
+            <br> System.out.println(Math.sqrt(a*a + b*b));
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- End of body content specific to page -->
+
+
+
+    </div>
 
     <!-- Start of body content specific to page -->
-    <p style = "font-size: 30px; color:#FF0000;"> Hello, this is Yajat's About Me Page. A fun fact about me is that my birthday falls on pi day!</p>
 
-    <!--    formula to find weekday used from https:`//cs.uwaterloo.ca/~alopez-o/math-faq/node73.html-->
-    <script type="text/javascript">
-        function birthday(){
-            var month = parseInt(document.getElementById("month").value);
-            var day = parseInt(document.getElementById("day").value);
-            var year = parseInt(document.getElementById("year").value);
-
-            if(month >= 3){var newmonth = month - 2;}
-            else if(month == 1){var newmonth = 11;}
-            else{var newmonth = 12;}
-
-            var century = Math.trunc(year/100);
-
-            if(month>=3){var newyear = year - (century * 100);}
-            else{var newyear = year - (century * 100) - 1;}
-
-            var sum = (day + Math.floor(2.6*(newmonth) - 0.2) - (2 * century) + newyear + Math.floor(newyear/4) + Math.floor(century/4));
-            if(sum < 0){var weekday = (-sum) % 7;}
-            else{var weekday = sum % 7;}
-
-            var days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            alert("You were born on a " + days_of_week[weekday] + "!");
-        }
-    </script>
-    <div class="contact" style="height: 35vh;">
-        <div class="row justify-content-left" style="margin: 2%;">
-            <form action="/yajat_about" method="GET" id="yajataboutForm">
-                <div>
-                    <label>Find out what day of the week you were born on! Enter the day were you born on</label>
-                    <input name="name2" id="month" placeholder="Month">
-                    <input name="name1" id="day" placeholder="Day">
-                    <input name="name3" id="year" placeholder="Year">
-                    <button onclick = "birthday()" id="button1">Submit</button>
-
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <p>
-        <img alt="" src="https://www.w3schools.com/images/lamp.jpg"
-             style="height: 85px; width: 198px" id="imagetochange" />
-    </p>
-
-
-    <div>
-        <!--            <label>What answer did you get?</label>-->
-        <!--            <input name="name2" id="Question" placeholder="Question">-->
-        <button onclick = "image_switch()" id="button2">Click to Grayscale the Image</button>
-        <!-- test 4 -->
-    </div>
-
-
-    <script type="text/javascript">
-        function image_switch(){
-            if(document.getElementById("imagetochange").style.filter == ""){
-                document.getElementById("imagetochange").style.filter = "grayscale(100%)";
-            }
-            else{
-
-                document.getElementById("imagetochange").style.filter = ""
-
-            }
-        }
-
-
-    </script>
-
-
-
-
-    <table>
-
-        <tr>
-            <td style = "font-size: 20px; color:rgb(0,89,255);"> Temperature (F)</td>
-            <td style = "font-size: 20px; color:rgb(0,89,255);"> Wind Speed (mph)</td>
-            <td style = "font-size: 20px; color:rgb(0,89,255);"> Humidity</td>
-            <td style = "font-size: 20px; color:rgb(0,89,255);"> Last Updated</td>
-        </tr>
-
-
-        <tr>
-            <td style = "font-size: 15px; color:#FF0000;"th:text="${temp}">Temperature (F)</td>
-            <td style = "font-size: 15px; color:#FF0000;"th:text="${wind_mph}">Wind Speed (mph)</td>
-            <td style = "font-size: 15px; color:#FF0000;"th:text="${humidity}">Humidity</td>
-            <td style = "font-size: 15px; color:#FF0000;"th:text="${last_updated}">Last Updated</td>
-        </tr>
-
-    </table>
-
-    <div>
-        <p style = "font-size: 30px; color:rgba(170,0,255,0.94); text-align:center;">Unit 3 FRQs</p>
-        Question 1
-        <br>
-        <br>Part A: Write a code segment that prints "attending" if rsvp is true and prints "not attending" otherwise.
-        <br>Write the code segment below.
-        <br>
-        <br>if (rsvp) {
-        <br>System.out.println("attending");
-        <br>}
-        <br>else {
-        <br>System.out.println("not attending");
-        <br>}
-        <br>
-        <br>Part B: Write a code segment that prints the food item associated with selection. For example, if selection is 3, the code segment should print "pasta".
-        <br>Write the code segment below. Your code segment should meet all specifications and conform to the example.
-        <br>
-        <br>if(selection == 1)
-        <br>{
-        <br>System.out.println("beef");
-        <br>}
-        <br>else if(selection == 2)
-        <br>{
-        <br>System.out.println("chicken");
-        <br>}
-        <br>else if(selection == 3)
-        <br>{
-        <br>System.out.println("pasta");
-        <br>}
-        <br>else
-        <br>{
-        <br>System.out.println("fish");
-        <br>}
-        <br>
-        <br>Part C: Write a code segment that will store a dinner selection in option1 based on the values of rsvp and selection. The intended behavior of the code segment is described below.
-        <br>If rsvp is true, the code segment should store in option1 a string indicating the person’s attendance and food choice. For example, if rsvp is true and selection is 1, the following string should be stored in option1.
-        <br>"Thanks for attending. You will be served beef."
-        <br>If rsvp is false, the following string should be stored in option1, regardless of the value of selection.
-        <br>"Sorry you can't make it."
-        <br>Write the code segment below. Your code segment should meet all specifications and conform to the examples.
-        <br>
-        <br>if(rsvp)
-        <br>{
-        <br>if (selection == 1){
-        <br>option1="Thanks for attending. You will be served beef";
-        <br>}
-        <br>else if (selection == 2){
-        <br>option1="Thanks for attending. You will be served chicken";
-        <br>}
-        <br>else if (selection == 3){
-        <br>option1="Thanks for attending. You will be served pasta";
-        <br>}
-        <br>else{
-        <br>option1="Thanks for attending. You will be served fish";
-        <br>}
-        <br>}
-        <br>else
-        <br>{
-        <br>option1="Sorry you can't make it";
-        <br>}
-        <br>
-        <br>Part D: Write a code segment that will print true if the strings option1 and option2 contain the same values and will print false otherwise.
-        <br>Write the code segment below.
-        <br>
-        <br>if(option1.equals(option2))
-        <br>{
-        <br>System.out.println("true");
-        <br>}
-        <br>else{
-        <br>System.out.println("false");
-        <br>}
-        <br>
-        <br>Question 2
-        <br>
-        <br>Write the method drawSquare below.
-        <br>/** Precondition: 0 ≤ x < 10, 0 < y ≤ 10, and len > 0.
-        <br>* Draws a square on a 10-by-10 xy-coordinate grid
-        <br>* and prints the square’s side length and area.
-        <br>* The upper left corner of the square will be located
-        <br>* at the coordinate (x, y) and the side length of the
-        <br>* square will be len (or as large as will fit in the grid).
-        <br>*/
-        <br>public void drawSquare(int x, int y, int len)
-        <br>
-        <br>public class Draw {
-        <br>
-        <br>public void drawLine(int x1, int y1, int x2, int y2) {
-        <br>
-        <br>public void drawSquare(int x, int y, int len) {
-        <br>int xsum = x + len; int ydiff = y - len;
-        <br>if (xsum > 10) xsum = 10 - x; if (ydiff < 0) ydiff = 0 - y;
-        <br>if ((x - xsum) > (y - ydiff)) xsum = ydiff+x-y;
-        <br>else ydiff = xsum+y-x;
-        <br>
-        <br>drawLine(x, y, x, ydiff);
-        <br>drawLine(x, y, xsum, y);
-        <br>drawLine(x, ydiff, xsum, ydiff);
-        <br>drawLine(xsum, y, xsum, ydiff);
-        <br>}
-        <br>
-        <br>int side = xsum - x;
-        <br>System.out.println("side length = " + side + ", area = " + (side*side));
-
-
-    </div>
-
-    <div>
-        <p style = "font-size: 30px; color:rgba(170,0,255,0.94); text-align:center;">Unit 2 FRQs</p>
-
-        <br>Consider the following class.
-        <br>public class LightSequence
-        <br>{
-        <br>// attributes not shown
-        <br>
-        <br>/** The parameter seq is the initial sequence used for
-        <br>* the light display
-        <br>*/
-        <br>public LightSequence(String seq)
-        <br>{ / implementation not shown / }
-        <br>
-        <br>/** Inserts the string segment in the current sequence,
-        <br>* starting at the index ind. Returns the new sequence.
-        <br>*/
-        <br>public String insertSegment(String segment, int ind)
-        <br>{ / implementation not shown / }
-        <br>
-        <br>/** Updates the sequence to the value in seq
-        <br>*/
-        <br>public void changeSequence(String seq)
-        <br>{ / implementation not shown / }
-<br>
-        <br>/** Uses the current sequence to turn the light on and off
-       <br> * for the show
-       <br> */
-       <br> public void display()
-       <br> { / implementation not shown / }
-        <br>}
-
-        <br>Part A: Write a statement to create a LightSequence object gradShow that has the initial light sequence "0101 0101 0101".
-        <br>Write the statement below.
-<br>
-        <br>LightSequence gradShow = new LightSequence("0101 0101 0101");
-<br>
-<br>
-        <br>Part B: Write a statement that will call the display method to display the light sequence for the gradShow object.
-        <br>Write the statement below.
-<br>
-<br>
-        <br>gradShow.display();
-<br>
-        <br>Part C: Write a statement that will be used to update the gradShow light sequence to "0011 0011 0011".
-        <br>Write the statement below.
-<br>
-        <br>gradShow.changeSequence("0011 0011 0011");
-<br>
-<br>
-        <br>Part D: Write a code segment that will call the insertSegment method to insert the segment "1111 1111" in the current sequence for gradShow at index 4. The resulting sequence will be stored in the string resultSeq.
-       <br> Write the code segment below.
-<br>
-<br>
-      <br>  String resultSeq = gradShow.insertSegment("1111 1111", 4);
-<br>
-<br>
-     <br>   Part E: Assume that the string oldSeq has been properly declared and initialized and contains the string segment. Write a code segment that will remove the first occurrence of segment from oldSeq and store it in the string newSeq. Consider the following examples.
-       <br> If oldSeq is "1100000111" and segment is "11", then "00000111" should be stored in newSeq.
-       <br> If oldSeq is "0000011" and segment is "11", then "00000" should be stored in newSeq.
-       <br> If oldSeq is "1100000111" and segment is "00", then "11000111" should be stored in newSeq.
-       <br> Write the code segment below. Your code segment should meet all specifications and
-       <br> conform to the examples.
-<br>
-       <br> int start = oldSeq.indexOf(segment);
-       <br> String newSeq = oldSeq.substring(0,start) + oldSeq.substring(start+segment.length());
-
-        <br>
-       <br> Part F: Two lights will be arranged on a two-dimensional plane. The vertical distance between the two lights is stored in the double variable a. The horizontal distance between the two lights is stored in the double variable b.The straight-line distance between the two lights is given by the formula .Write a code segment that prints the straight-line distance between the two lights according to the formula above.
-<br>
-<br>
-<br>
-       <br> System.out.println(Math.sqrt(a*a + b*b));
-
-
-
-
-
-    </div>
-
-
-
-
-
-
-</div>
-
-<!-- End of body content specific to page -->
-
-</body>
 </html>
 
 
