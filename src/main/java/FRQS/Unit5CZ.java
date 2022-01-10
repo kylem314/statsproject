@@ -16,11 +16,14 @@ public class Unit5CZ {
         address = a;
 
     }
+
     public String getHostName(){
         return hostName;
-    }
-    public String updateAddress(String newAddress) {
+    }  //part 1a
+
+    public String updateAddress(String newAddress) {  //part 1b
         String newaddress = newAddress;
         return newaddress;
     }
+
 }
