@@ -19,8 +19,9 @@
     <div class="row justify-content-md-center">
       <h1>College List</h1>
     </div>
+
     <div class="row justify-content-md-center">
-      <a th:href="@{add_college/}">Add College</a>
+      <a th:href="@{/college_add}">Add College</a>
     </div>
 
     <table class="table table-bordered">
@@ -32,14 +33,15 @@
 
       </tr>
       </thead>
+
       <tbody>
       <tr th:each="college : ${list}">
-        <td th:text="${college.id}">Ranking (US News and World Reports 2022)</td>
+        <td th:text="${college.id}">College ID</td>
         <td th:text="${college.name}">College Name</td>
         <td th:text="${college.deadline}">Deadline</td>
         <td>
-          <a th:href="@{update_update/{id}(id = ${college.id})}">Update</a>
-          <a th:href="@{college_delete/{id}(id = ${person.id})}">Delete</a>
+          <a th:href="@{/database/college_update/{id}(id = ${college.id})}">Update</a>
+<!--          <a th:href="@{/database/college_delete/{id}(id = ${college.id})}">Delete</a>-->
         </td>
       </tr>
       </tbody>

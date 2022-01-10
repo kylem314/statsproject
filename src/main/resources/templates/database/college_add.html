@@ -22,24 +22,9 @@
         <div class="row justify-content-md-center">
             <div class="col8">
                 <div class="jumbotron">
-                    <h3>Create College</h3>
-                    <!-- ThymeLeaf allows person abject of the Class Person to be acted upon by the form
-                         This is known as a “bean-backed form” or "form-backing bean".
-                            th:object - the backend form object (bean object)
-                         There are fields in the Person bean
-                            th:field="*{name}"
-                            th:field="*{age}"
-                            th:field="*{dob}"
-                         Each field has supporting line to show errors in validation
-                            th:errors - form input errors added when validation errors occur
-                         Reference for CRUD
-                            https://www.baeldung.com/spring-boot-crud-thymeleaf
-                         Get started with dialects in 5 minutes
-                            https://www.thymeleaf.org/doc/articles/standarddialect5minutes.html
-                         Reference Bootstrap Form
-                            https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
-                     -->
-                    <form class="form-inline" action="#" th:action="@{add_college}" th:object="${college}" method="POST">
+                    <h3>Add College</h3>
+
+                    <form class="form-inline" action="#" th:action="@{/college_add}" th:object="${college}" method="POST">
                         <div class="input-group mb-2 mr-sm-2">
                             <label for="name">Name:</label>
                             <input type="text" th:field="*{name}" id="name">
@@ -48,7 +33,7 @@
                         <div class="input-group mb-2 mr-sm-2">
                             <label for="deadline">Deadline</label>
                             <input type="date" th:field="*{deadline}" id="deadline">
-                            <small th:if="${#fields.hasErrors('deadline')}" th:errors="*{deadline}">Birth Date Error</small>
+                            <small th:if="${#fields.hasErrors('deadline')}" th:errors="*{deadline}">Deadline Error</small>
                         </div>
                         <button type="submit" class="btn btn-primary">Add</button>
                     </form>

@@ -1,181 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
-            crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <title>P1 Intellijs</title>
-</head>
-<body>
-<!-- Navbar Section -->
-<nav class="navbar">
-    <a href="/home" class="navbar__logo">SECRET</a>
-    <div class="navbar__bars"><i class="fas fa-bars"></i></div>
-    <div class="navbar__menu">
-        <a href="/" class="navbar__menu--links">Home</a>
-        <a href="/" class="navbar__menu--links">Products</a>
-        <a href="/" class="navbar__menu--links">Services</a>
-        <a href="/" class="navbar__menu--links" id="button">Sign Up</a>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<div class="hero">
-    <div class="hero__container">
-        <div class="hero__container--left">
-            <h1>College Apps Are Coming!</h1>
-            <h2>Be Prepared</h2>
-            <p>Sign up now to join the list.</p>
-            <button class="hero__container--btn"><a href="#">Sign Up</a></button>
-        </div>
-        <div class="hero__container--right">
-            <img
-                    src="images/img-2.svg"
-                    class="hero__container--img"
-            />
-        </div>
-    </div>
-</div>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<!--&lt;!&ndash; This page is illustrative and contains ideas about HTML formatting &ndash;&gt;-->
-<!--<!DOCTYPE HTML>-->
-<!--&lt;!&ndash; Signals to the Layout Dialect which layout should be used to decorate this View &ndash;&gt;-->
-<!--<html xmlns:layout="http://www.w3.org/1999/xhtml"-->
-<!--      xmlns:th="http://www.w3.org/1999/xhtml" xmlns=""-->
-<!--      layout:decorate="~{layout}" lang="en">-->
-
-<!--&lt;!&ndash; <head> &ndash;&gt;-->
-<!--<div layout:fragment="head" th:remove="tag">-->
-<!--    &lt;!&ndash; Page specific head additions &ndash;&gt;-->
-<!--    <title>IntelliJs College Consulting</title>-->
-<!--</div>-->
-
-
-<!--&lt;!&ndash;<th:block layout:fragment="head" th:remove="tag">&ndash;&gt;-->
-<!--&lt;!&ndash;    <title>Draw</title>&ndash;&gt;-->
-<!--&lt;!&ndash;</th:block>&ndash;&gt;-->
-
-
-<!--<div layout:fragment="body" th:remove="tag">-->
-<!--<div>-->
-<!--    <label> Enter the side length and (x,y) of the square</label>-->
-<!--    <input name="form_name" id="length" placeholder="length">-->
-<!--    <input name="form_x" id="x" placeholder="x">-->
-<!--    <input name="form_y" id="y" placeholder="y">-->
-<!--    <button onclick = "drawSquare()" id="button1">Submit</button>-->
-
-
-<!--    <h1 class="text-center">JavaScript - Draw on Canvas</h1>-->
-<!--    <div class="container py-4 bg-primary" style="text-align:center;">-->
-<!--        <canvas id="canvas" width="512" height="384" ></canvas>-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--    <link-->
+<!--            rel="stylesheet"-->
+<!--            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"-->
+<!--            integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"-->
+<!--            crossorigin="anonymous"-->
+<!--    />-->
+<!--    <link rel="stylesheet" href="./styles/styles.css" />-->
+<!--    <title>P1 Intellijs</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; Navbar Section &ndash;&gt;-->
+<!--<nav class="navbar">-->
+<!--    <a href="/home" class="navbar__logo">SECRET</a>-->
+<!--    <div class="navbar__bars"><i class="fas fa-bars"></i></div>-->
+<!--    <div class="navbar__menu">-->
+<!--        <a href="/" class="navbar__menu&#45;&#45;links">Home</a>-->
+<!--        <a href="/" class="navbar__menu&#45;&#45;links">Products</a>-->
+<!--        <a href="/" class="navbar__menu&#45;&#45;links">Services</a>-->
+<!--        <a href="/" class="navbar__menu&#45;&#45;links" id="button">Sign Up</a>-->
 <!--    </div>-->
+<!--</nav>-->
 
-<!--    <script>-->
-
-<!--        function drawSquare() {-->
-<!--            // https://www.w3schools.com/graphics/canvas_intro.asp-->
-<!--            const canvas = document.getElementById('canvas');-->
-<!--            const ctx = canvas.getContext('2d');-->
-<!--            const width = canvas.width;-->
-<!--            const height = canvas.height;-->
-<!--            const unit = parseInt(document.getElementById("length").value);   // unit block size-->
-
-
-<!--            // grid based off of width, height-->
-<!--            function grid() {-->
-<!--                // color and pen width-->
-<!--                ctx.strokeStyle = 'white';-->
-<!--                ctx.lineWidth = 1;-->
-<!--                // make graph paper look-->
-<!--                for (let col = 0; col < width; col += unit) {-->
-<!--                    for (let row = 0; row < height; row += unit) {-->
-<!--                        ctx.strokeRect(col, row, unit, unit);-->
-<!--                    }-->
-<!--                }-->
-<!--            }-->
-
-<!--            // axis lines-->
-<!--            function axis() {-->
-<!--                // color and pen width-->
-<!--                ctx.strokeStyle = 'red';-->
-<!--                ctx.lineWidth = 3;-->
-
-<!--                // x & y zero midpoints of grid-->
-<!--                const x0 = width * .5;-->
-<!--                const y0 = height * .5;-->
-<!--                // x-axis-->
-<!--                ctx.moveTo(0, y0);-->
-<!--                ctx.lineTo(width, y0);-->
-<!--                ctx.stroke();-->
-<!--                // y-axis-->
-<!--                ctx.moveTo(x0, 0);-->
-<!--                ctx.lineTo(x0, height);-->
-<!--                ctx.stroke();-->
-<!--            }-->
-
-<!--            // square using lines-->
-<!--            function square() {-->
-<!--                ctx.strokeStyle = 'black';-->
-<!--                ctx.lineWidth = 5;-->
-
-<!--                // starting coordinates-->
-<!--                const x1 = width/2;-->
-
-<!--                const x2 = parseInt(document.getElementById("x").value);-->
-
-<!--                const x = x2 + x1;-->
-
-<!--                const y1 = height/2;-->
-<!--                const y2 = parseInt(document.getElementById("y").value);-->
-<!--                const y = y1 + y2;-->
-<!--                // length of sides is 4 units-->
-<!--                const l = unit * 4;-->
-
-<!--                // draw a square-->
-<!--                ctx.beginPath();-->
-<!--                ctx.moveTo(x, y);-->
-<!--                ctx.lineTo(x, y + l);-->
-<!--                ctx.lineTo(x + l, y + l);-->
-<!--                ctx.lineTo(x + l, y);-->
-<!--                ctx.lineTo(x, y);-->
-<!--                ctx.stroke();-->
-<!--            }-->
-
-<!--            // three actions-->
-<!--            grid();-->
-<!--            axis();-->
-<!--            // hack 1: make square according to grid positioning-->
-<!--            square();-->
-<!--        }-->
-<!--        // hack 2: plot line or square on grid from user input according-->
-<!--    </script>-->
+<!--&lt;!&ndash; Hero Section &ndash;&gt;-->
+<!--<div class="hero">-->
+<!--    <div class="hero__container">-->
+<!--        <div class="hero__container&#45;&#45;left">-->
+<!--            <h1>College Apps Are Coming!</h1>-->
+<!--            <h2>Be Prepared</h2>-->
+<!--            <p>Sign up now to join the list.</p>-->
+<!--            <button class="hero__container&#45;&#45;btn"><a href="#">Sign Up</a></button>-->
+<!--        </div>-->
+<!--        <div class="hero__container&#45;&#45;right">-->
+<!--            <img-->
+<!--                    src="images/img-2.svg"-->
+<!--                    class="hero__container&#45;&#45;img"-->
+<!--            />-->
+<!--        </div>-->
+<!--    </div>-->
 <!--</div>-->
-<!--</div>-->
-
+<!--</body>-->
 <!--</html>-->
 
-<!--<style>-->
-<!--    html, body{-->
-<!--        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);-->
-<!--    }-->
-<!--</style>-->
+
+
+
+
+
+
+
+
+
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml" xmlns=""
+      layout:decorate="~{layout}" lang="en">
+
+<!-- <head> -->
+<div layout:fragment="head" th:remove="tag">
+    <!-- Page specific head additions -->
+    <title>IntelliJs College Consulting</title>
+</div>
+
+
+<!--<th:block layout:fragment="head" th:remove="tag">-->
+<!--    <title>Draw</title>-->
+<!--</th:block>-->
+
+
+<div layout:fragment="body" th:remove="tag">
+<div>
+    <label> Enter the side length and (x,y) of the square</label>
+    <input name="form_name" id="length" placeholder="length">
+    <input name="form_x" id="x" placeholder="x">
+    <input name="form_y" id="y" placeholder="y">
+    <button onclick = "drawSquare()" id="button1">Submit</button>
+
+
+    <h1 class="text-center">JavaScript - Draw on Canvas</h1>
+    <div class="container py-4 bg-primary" style="text-align:center;">
+        <canvas id="canvas" width="512" height="384" ></canvas>
+    </div>
+
+    <script>
+
+        function drawSquare() {
+            // https://www.w3schools.com/graphics/canvas_intro.asp
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width;
+            const height = canvas.height;
+            const unit = parseInt(document.getElementById("length").value);   // unit block size
+
+
+            // grid based off of width, height
+            function grid() {
+                // color and pen width
+                ctx.strokeStyle = 'white';
+                ctx.lineWidth = 1;
+                // make graph paper look
+                for (let col = 0; col < width; col += unit) {
+                    for (let row = 0; row < height; row += unit) {
+                        ctx.strokeRect(col, row, unit, unit);
+                    }
+                }
+            }
+
+            // axis lines
+            function axis() {
+                // color and pen width
+                ctx.strokeStyle = 'red';
+                ctx.lineWidth = 3;
+
+                // x & y zero midpoints of grid
+                const x0 = width * .5;
+                const y0 = height * .5;
+                // x-axis
+                ctx.moveTo(0, y0);
+                ctx.lineTo(width, y0);
+                ctx.stroke();
+                // y-axis
+                ctx.moveTo(x0, 0);
+                ctx.lineTo(x0, height);
+                ctx.stroke();
+            }
+
+            // square using lines
+            function square() {
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 5;
+
+                // starting coordinates
+                const x1 = width/2;
+
+                const x2 = parseInt(document.getElementById("x").value);
+
+                const x = x2 + x1;
+
+                const y1 = height/2;
+                const y2 = parseInt(document.getElementById("y").value);
+                const y = y1 + y2;
+                // length of sides is 4 units
+                const l = unit * 4;
+
+                // draw a square
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+                ctx.lineTo(x, y + l);
+                ctx.lineTo(x + l, y + l);
+                ctx.lineTo(x + l, y);
+                ctx.lineTo(x, y);
+                ctx.stroke();
+            }
+
+            // three actions
+            grid();
+            axis();
+            // hack 1: make square according to grid positioning
+            square();
+        }
+        // hack 2: plot line or square on grid from user input according
+    </script>
+</div>
+</div>
+
+</html>
+
+<style>
+    html, body{
+        background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+    }
+</style>
 
 
 
