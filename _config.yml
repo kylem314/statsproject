@@ -4,10 +4,16 @@ author: Kyle Myint, Yajat Yadav, Eric Wang, Charlie Zhu, AK Prathipati
 
 enableTags = true
 
+urls:
+  - text: About Us
+    url: /about/
+  - txt: Projects
+    url: /project/
 
 url: "https://kylem314.github.io/website"
 baseurl: ""
 paginate: 20
 per_page: 20
 paginate_path: "/website/page/:num/"
-markdown:
+markdown: kramdown
+
