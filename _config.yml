@@ -3,3 +3,11 @@ description: Jekyll website for Intellij's team
 author: Kyle Myint, Yajat Yadav, Eric Wang, Charlie Zhu, AK Prathipati
 
 enableTags = true
+
+
+url: "https://kylem314.github.io/website"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/website/page/:num/"
+markdown:
