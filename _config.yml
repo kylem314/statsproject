@@ -10,7 +10,7 @@ urls:
   - txt: Projects
     url: /project/
 
-url: "https://kylem314.github.io/website"
+url: "https://kylem314.github.io/"
 baseurl: ""
 paginate: 20
 per_page: 20
