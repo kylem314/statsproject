@@ -1,1 +1,5 @@
 title: Intellijs
+description: Jekyll website for Intellij's team
+author: Kyle Myint, Yajat Yadav, Eric Wang, Charlie Zhu, AK Prathipati
+
+enableTags = true
