@@ -70,3 +70,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+theme: jekyll-theme-time-machine
