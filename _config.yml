@@ -45,7 +45,7 @@ url: "intellijs.wiki" # the base hostname & protocol for your site, e.g. http://
 github_username:  kylem314
 
 # Build settings
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 
