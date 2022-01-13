@@ -1,4 +1,5 @@
 # Welcome to P1 Intellijs' College Application Service  
+<br/>
 
 ## [Running site](https://intellijs.cf/)  
 <br/>
@@ -13,12 +14,14 @@ Charlie Zhu | 1855387 | [Issues](https://github.com/yajatyadav/intellijs/labels/
 Yajat Yadav | yajatyadav | [Issues](https://github.com/yajatyadav/intellijs/labels/Yajat%20Yadav) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Ayajatyadav) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=yajatyadav) | [Profile](https://github.com/yajatyadav) | [Add Repl]() |
 Eric Wang | elw55555 | [Issues](https://github.com/yajatyadav/intellijs/labels/Eric%20Wang) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aelw55555) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=elw55555) | [Profile](https://github.com/elw55555) | [Add Repl]() |
 Ak Prathipati | akprathipati | [Issues](https://github.com/yajatyadav/intellijs/labels/Akshit%20Prathipati) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aakprathipati) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=akprathipati) | [Profile](https://github.com/akprathipati) | [Add Repl]() |  
+<br/>
 
 ## Wiki  
 Our wiki offers in-depth documentation for various aspects of our project.
 #### [Deployment](https://github.com/yajatyadav/intellijs/wiki/Deployment)
 #### [Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
 #### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)  
+<br/>
 
 ### Week 3 (12/13-12/17) About pages + Unit 3 FRQ  
 [Review ticket](https://github.com/yajatyadav/intellijs/issues/10)  
