@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # Welcome to P1 Intellijs' College Application Services
 
 ## [Running site](https://intellijs.cf/)
