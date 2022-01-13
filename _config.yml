@@ -1,20 +1,20 @@
-title: Intellijs
-description: Jekyll website for Intellij's team
-author: Kyle Myint, Yajat Yadav, Eric Wang, Charlie Zhu, AK Prathipati
+#title: Intellijs
+#description: Jekyll website for Intellij's team
+#author: Kyle Myint, Yajat Yadav, Eric Wang, Charlie Zhu, AK Prathipati
 
 
-urls:
-  - text: About Us
-    url: /about/
-  - txt: Projects
-    url: /project/
+#urls:
+#  - text: About Us
+#    url: /about/
+#  - txt: Projects
+#    url: /project/
 
-url: "https://kylem314.github.io/"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/website/page/:num/"
-markdown: kramdown
+#url: "https://kylem314.github.io/"
+#baseurl: ""
+#paginate: 20
+#per_page: 20
+#paginate_path: "/website/page/:num/"
+#markdown: kramdown
 
 # Welcome to Jekyll!
 #
