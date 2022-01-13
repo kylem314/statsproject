@@ -1,5 +1,8 @@
 theme: jekyll-theme-midnight
-description: "This GitHub project provides Advance Placement Computer Science 'A' (AP-CSA) code, training, and teaching materials.  This page is a 'GitHub Pages' website and contains guidance and development activities.   Cloning the GitHub Project provides Java-Spring webserver code.  Explore this page for activities. including procedures to develop, build, and deploy a Web Server."
-email: "nighthawkcodingsociety@gmail.com"
-webserver: "csa.nighthawkcodingsociety.com"
-twitter: "twitter.com/NighthawkCoding"
+title: P1 Intellijs
+description: >- # this means to ignore newlines until "baseurl:"
+Website for p1-Intellijs College Application Service
+email: "kylem31415@gmail.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
