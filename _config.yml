@@ -46,7 +46,7 @@ github_username:  kylem314
 
 # Build settings
 #theme: jekyll-theme-midnight
-remote_theme: jekyll/minima
+#remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
 
