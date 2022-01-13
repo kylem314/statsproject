@@ -60,6 +60,7 @@ Our wiki offers in-depth documentation for various aspects of our project.
 
 ### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
 [Review ticket](https://github.com/yajatyadav/intellijs/issues/10)
+
 Name | Link to code | Link to page |
 --- | --- | --- |
 Kyle Myint | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/resources/templates/kyleabout) | [Link](http://intellijs.cf/kyleabout) |
