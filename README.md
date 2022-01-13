@@ -31,8 +31,3 @@ Eric Wang | [Link](https://github.com/yajatyadav/intellijs/blob/main/src/main/re
 Ak Prathipati | [Link](https://github.com/yajatyadav/intellijs/commit/7b31523e7ee1fa9ae5863a146fcd0e0dbc52a04d) | [Link](http://intellijs.cf/akabout) |
 
 
-### Week 4 (1/3 - 1/7)
-
-Testing | Tables
---- | ---
-here | now
