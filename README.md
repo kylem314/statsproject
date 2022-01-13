@@ -1,3 +1,4 @@
+{% raw %}
 # Welcome to P1 Intellijs' College Application Services
 
 ## [Running site](https://intellijs.cf/)
@@ -30,3 +31,5 @@ Ak Prathipati | [Link](https://github.com/yajatyadav/intellijs/commit/7b31523e7e
 
 
 ### Week 4 (1/3 - 1/7)
+
+{% endraw %}
