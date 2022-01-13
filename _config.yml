@@ -71,4 +71,4 @@ plugins:
 #   - vendor/ruby/
 
 
-theme: jekyll-theme-time-machine
+remote_theme: jekyll-theme-time-machine
