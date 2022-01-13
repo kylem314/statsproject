@@ -1,8 +1,8 @@
-# Welcome to P1 Intellijs' College Application Service
+# Welcome to P1 Intellijs' College Application Service  
 
-## [Running site](https://intellijs.cf/)
+## [Running site](https://intellijs.cf/)  
 
-## Scrum Team Members and Contributions
+## Scrum Team Members and Contributions  
 
 m221p1-youre-mom   | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1) | [Repo Contributors](https://github.com/yajatyadav/intellijs/graphs/contributors) | ------ | ------ | ------ | ------ |
 ------ | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -11,16 +11,16 @@ Kyle Myint | kylem314 | [Issues](https://github.com/yajatyadav/intellijs/labels/
 Charlie Zhu | 1855387 | [Issues](https://github.com/yajatyadav/intellijs/labels/Charlie%20Zhu) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3A1855387) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=1855387) | [Profile](https://github.com/1855387) | [Add Repl]() |
 Yajat Yadav | yajatyadav | [Issues](https://github.com/yajatyadav/intellijs/labels/Yajat%20Yadav) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Ayajatyadav) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=yajatyadav) | [Profile](https://github.com/yajatyadav) | [Add Repl]() |
 Eric Wang | elw55555 | [Issues](https://github.com/yajatyadav/intellijs/labels/Eric%20Wang) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aelw55555) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=elw55555) | [Profile](https://github.com/elw55555) | [Add Repl]() |
-Ak Prathipati | akprathipati | [Issues](https://github.com/yajatyadav/intellijs/labels/Akshit%20Prathipati) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aakprathipati) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=akprathipati) | [Profile](https://github.com/akprathipati) | [Add Repl]() |
+Ak Prathipati | akprathipati | [Issues](https://github.com/yajatyadav/intellijs/labels/Akshit%20Prathipati) | [Scrum Board](https://github.com/yajatyadav/intellijs/projects/1?card_filter_query=assignee%3Aakprathipati) | [Commit Page](https://github.com/yajatyadav/intellijs/commits?author=akprathipati) | [Profile](https://github.com/akprathipati) | [Add Repl]() |  
 
-## Wiki
+## Wiki  
 Our wiki offers in-depth documentation for various aspects of our project.
-##### [Deployment](https://github.com/yajatyadav/intellijs/wiki/Deployment)
-##### [Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
-##### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)
+#### [Deployment](https://github.com/yajatyadav/intellijs/wiki/Deployment)
+#### [Contributing Guidelines](https://github.com/yajatyadav/intellijs/wiki/Contributing-Guidelines)
+#### [Project Theme + Technicals](https://github.com/yajatyadav/intellijs/wiki/Project-Theme---Technicals)  
 
-### Week 3 (12/13-12/17) About pages + Unit 3 FRQ
-[Review ticket](https://github.com/yajatyadav/intellijs/issues/10)
+### Week 3 (12/13-12/17) About pages + Unit 3 FRQ  
+[Review ticket](https://github.com/yajatyadav/intellijs/issues/10)  
 
 Name | Link to code | Link to page |
 --- | --- | --- |
