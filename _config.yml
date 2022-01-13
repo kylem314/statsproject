@@ -4,5 +4,4 @@ description: Website for p1-Intellijs College Application Service
 email: "kylem31415@gmail.com"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-kramdown:
-  parse_block_html: true
+markdown: kramdown
