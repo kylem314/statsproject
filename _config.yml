@@ -41,7 +41,7 @@ title: P1 Intellijs
 description: >- # this means to ignore newlines until "baseurl:"
   Jekyll site for P1-Intellijs
 baseurl: "intellijs" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "intellijs.wiki" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  kylem314
 
 # Build settings
