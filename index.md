@@ -1,4 +1,6 @@
 
-{% raw %}{{ content }}{% endraw %}
+{% raw %}
 
 {% include_relative README.md %}
+
+{% endraw %}
