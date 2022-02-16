@@ -1,5 +1,5 @@
 {% raw %}{
-# Welcome to P1 Intellijs' College Application Service
+# Welcome to P1 Intellijs' College Application  Main
 
 ## [Running site](https://intellijs.cf/)
 
