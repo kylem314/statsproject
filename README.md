@@ -1,6 +1,6 @@
 ## Does mobile gaming lead to higher screen times?
 
-You’d think that gaming leads to higher screen times, right?  That all the time you spend earning trophies on supercell games, clicking circles in rhythm games, and spending all your money on jpegs should add up over time? Well we we curious on the topic and thought so too, so we performed a study on the screen usage students of Del Norte High School.  Here are our results.
+You’d think that gaming leads to higher screen times, right?  That all the time you spend earning trophies on supercell games, clicking circles in rhythm games, and spending all your money on jpegs should add up over time? Well we were curious on the topic and thought so too, so we performed a study on the screen usage students of Del Norte High School.  Here are our results.
 <br/><br/>
 
 
