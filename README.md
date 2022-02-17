@@ -4,7 +4,7 @@
 
 #### Does mobile gaming lead to higher screen times?
 
-You’d think that gaming leads to higher screen times right? All that time you spend earning trophies on supercell games, clicking circles inrhythm games, and spending all your money on jpegs should add up over time right? Well we did a study on the screen usage students of Del Norte High School and here are our results
+You’d think that gaming leads to higher screen times, right?  That all the time you spend earning trophies on supercell games, clicking circles in rhythm games, and spending all your money on jpegs should add up over time? Well we we curious on the topic and thought so too, so we performed a study on the screen usage students of Del Norte High School.  Here are our results.
 <br/><br/>
 
 
@@ -20,9 +20,7 @@ Here's what that all "means" (get it cause we're showing you the mean and median
 
 ![image](https://cdn.discordapp.com/attachments/933718247239483392/943761952449118248/unknown.png)
 
-Our study was on 72 students from Del Norte, a random stratified sample by grade of homerooms. This led to 22 people without games on their device, and 50 with games on their device
-
-Based on the the amount of hours of screen time they put, we made graphs of their screen time, and those are the results of those graphs.
+Our study was on 71 students from Del Norte, selected by a random sample stratified by grade using homeroom classes. This led to us finding 21 students who didn't play mobile games and 50 who did.  We then collected data for the time each student spent on screens to perform an analysis.
 
 Now, if you just look at the base values of mean screen time, you'd say gamers on average have more screen time right?
 
