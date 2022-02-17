@@ -14,7 +14,7 @@ And here's the plot of screen time by non-gamers
 
 Here's what that all "means" (get it cause we're showing you the mean and median ahahaha) <sub>(please laugh I'm begging you)</sub>
 
-
+![image](https://user-images.githubusercontent.com/55672662/154544050-ec23b37d-ff6c-4a69-97ea-3d29f38f8791.png)
 
 Our study was on 71 students from Del Norte, selected by a random sample stratified by grade using homeroom classes since there could be discrepancies between grades due to factors such as how much free time students have or what they use their phones for. This led to us finding 21 students who didn't play mobile games and 50 who did.  We then collected data for the time each student spent on screens to perform an analysis.
 
