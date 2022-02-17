@@ -20,11 +20,12 @@ Here's what that all "means" (get it cause we're showing you the mean and median
 
 ![image](https://cdn.discordapp.com/attachments/933718247239483392/943761952449118248/unknown.png)
 
-Our study was on 71 students from Del Norte, selected by a random sample stratified by grade using homeroom classes. This led to us finding 21 students who didn't play mobile games and 50 who did.  We then collected data for the time each student spent on screens to perform an analysis.
+Our study was on 71 students from Del Norte, selected by a random sample stratified by grade using homeroom classes since there could be discrepancies between grades due to factors such as how much free time students have or what they use their phones for. This led to us finding 21 students who didn't play mobile games and 50 who did.  We then collected data for the time each student spent on screens to perform an analysis.
 
 Now, if you just look at the base values of mean screen time, you'd say gamers on average have more screen time right?
 
 WRONG WE TRICKED YOU WITH THE POWER OF STATS
 
+Although our higher mean for the hours spent by mobile gamers provides some evidence of a correlation between mobile games and screen time usage, we were unable to find convincing evidence to support that claim, rendering our study inconclusive.  If there truly isn't a difference in means between mobile gamers and non-mobile gamers, this would lead us to believe that even if people don't play mobile games, the time they spend on other applications such as social media or youtube makes up that time differential.  
 
-
+Even though we weren't able to prove a correlation between screen time and mobile games, we hope our study helped to shed some light on the topic.  Thanks for reading!
