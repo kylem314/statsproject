@@ -25,3 +25,6 @@ WRONG WE TRICKED YOU WITH THE POWER OF STATS
 Although our higher mean for the hours spent by mobile gamers provides some evidence of a correlation between mobile games and screen time usage, we were unable to find convincing evidence to support that claim, rendering our study inconclusive.  If there truly isn't a difference in means between mobile gamers and non-mobile gamers, this would lead us to believe that even if people don't play mobile games, the time they spend on other applications such as social media or youtube makes up that time differential.  
 
 Even though we weren't able to prove a correlation between screen time and mobile games, we hope our study helped to shed some light on the topic.  Thanks for reading!
+
+Here's a more detailed analysis if you're interested including our statistical calculations.
+[Analysis Document](https://docs.google.com/document/d/13IkqLTWlUwif26cReOZvmOe64YTSFnt6bv1KGt0-YYQ/edit?usp=sharing)
