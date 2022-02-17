@@ -12,7 +12,7 @@ Here's the graphs of the hours of screen time spent by gamers vs non-gamers
 ![image](https://user-images.githubusercontent.com/70969105/154406300-1f72ff02-5ae8-4445-b396-281987fb7017.png)
 
 And here's what that all "means" (get it cause we're showing you the mean and median ahahaha)
-![image](https://user-images.githubusercontent.com/70969105/154405374-b49cecf7-32cf-4e32-9ea2-40c4cee62187.png)
+![image](https://cdn.discordapp.com/attachments/933718247239483392/943761952449118248/unknown.png)
 
 Our study was on 72 students from Del Norte, a random stratified sample by grade of homerooms. This led to 22 people without games on their device, and 50 with games on their device
 
