@@ -9,7 +9,7 @@ Does mobile gaming lead to higher screen times?
 
 So, does it?
 
-You’d think that gaming leads to higher screen times right? All those trophies on supercell games, rhythm gaming, and spending all your money on jpegs should add up over time right? Well we did a study on the students of Del Norte High School and here are our results
+You’d think that gaming leads to higher screen times right? All those trophies on supercell games, rhythm gaming, and spending all your money on jpegs should add up over time right? Well we did a study on the students of Del Norte High School and here are our results\n
 Here's the graphs of the hours of screen time spent by gamers vs non-gamers
 
 ![image](https://user-images.githubusercontent.com/70969105/154407248-bdb9716e-b46e-46c8-8286-e1544b4b8427.png)
