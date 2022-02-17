@@ -1,15 +1,10 @@
-# Welcome to Stats Project gaming
+# Mobile Gaming: screen addiction or just fiction?
 
 ### By Kyle M and Brandon T
 
-#### This is a cool website trust me
+#### Does mobile gaming lead to higher screen times?
 
-**Mobile Gaming: is it screen addiction or just fiction?**
-Does mobile gaming lead to higher screen times?
-
-So, does it?
-
-You’d think that gaming leads to higher screen times right? All those trophies on supercell games, rhythm gaming, and spending all your money on jpegs should add up over time right? Well we did a study on the students of Del Norte High School and here are our results
+You’d think that gaming leads to higher screen times right? All that time you spend earning trophies on supercell games, clicking circles inrhythm games, and spending all your money on jpegs should add up over time right? Well we did a study on the screen usage students of Del Norte High School and here are our results
 <br/><br/>
 Here's the graphs of the hours of screen time spent by gamers vs non-gamers
 
