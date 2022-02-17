@@ -26,5 +26,5 @@ Although our higher mean for the hours spent by mobile gamers provides some evid
 
 Even though we weren't able to prove a correlation between screen time and mobile games, we hope our study helped to shed some light on the topic.  Thanks for reading!
 
-Here's a more detailed analysis if you're interested including our statistical calculations.
+Here's a more detailed analysis if you're interested including our statistical calculations. <br/>
 [Analysis Document](https://docs.google.com/document/d/13IkqLTWlUwif26cReOZvmOe64YTSFnt6bv1KGt0-YYQ/edit?usp=sharing)
